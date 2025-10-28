@@ -7,8 +7,9 @@ model = joblib.load("marketing_model_rf.pkl")
 le = joblib.load("label_encoder.save")
 scaler = joblib.load("scaler.save")
 
-st.title("Finance Approval Predictor")
-st.write("Predict whether a loan or purchase request will be approved based on your financial details.")
+st.title("Marketing Response Predictor")
+st.write("Enter customer details to predict if they will respond to the campaign.")
+
 
 # User Inputs
 income = st.number_input("Annual Income (₹)", 10000, 10000000, 500000)
